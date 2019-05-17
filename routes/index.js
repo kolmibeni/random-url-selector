@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
     let url_list = JSON.parse(data);
     var url_count = Object.keys(url_list).length;
     
-    var selected_url = "url_" + random.int(min = 1, max = 5); // uniform integer in [ min, max ];
+    var selected_url = "url_" + random.int(min = 1, max = url_count); // uniform integer in [ min, max ];
     console.log(selected_url);
     console.log(url_list[selected_url]);
 
