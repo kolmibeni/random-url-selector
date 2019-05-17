@@ -22,7 +22,8 @@ router.get('/', function(req, res, next) {
     console.log(selected_url);
     console.log(url_list[selected_url]);
 
-    res.redirect("http://" + url_list[selected_url]);
+    res.redirect(url_list[selected_url]);
+    //res.redirect("http://" + url_list[selected_url]);
   });
   
 });
